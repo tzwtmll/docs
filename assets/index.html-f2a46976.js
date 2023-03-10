@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-74bc627b","path":"/about/","title":"关于","lang":"zh-CN","frontmatter":{"permalink":"/about"},"headers":[{"level":2,"title":"微信","slug":"微信","link":"#微信","children":[]},{"level":2,"title":"邮箱","slug":"邮箱","link":"#邮箱","children":[]}],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"about/index.md"}');export{e as data};

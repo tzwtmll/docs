@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-4ef8437c","path":"/engineering/vite/study/","title":"学习 vite","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"engineering/vite/study/index.md"}');export{e as data};
