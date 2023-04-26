@@ -1,23 +1,10 @@
-import { defineUserConfig } from 'vuepress'
-import theme from './theme.js'
+import { defineUserConfig } from 'vuepress';
+import theme from './theme.js';
 
 export default defineUserConfig({
-  base: '/v2docs',
-  locales: {
-    '/': {
-      lang: 'en-US',
-      title: 'Docs Demo',
-      description: 'A docs demo for vuepress-theme-hope',
-    },
-    '/zh/': {
-      lang: 'zh-CN',
-      title: '文档演示',
-      description: 'vuepress-theme-hope 的文档演示',
-    },
-  },
-
+  base: '/v2docs/',
+  lang: 'zh-CN',
+  title: '技术文档',
+  description: 'Welcome to my docs',
   theme,
-
-  // Enable it with pwa
-  // shouldPrefetch: false,
-})
+});

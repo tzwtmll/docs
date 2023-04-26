@@ -4,7 +4,7 @@ export const enNavbar = navbar([
   "/",
   { text: "Demo", icon: "discover", link: "/demo/" },
   {
-    text: "Guide",
+    text: "导航",
     icon: "creative",
     prefix: "/guide/",
     children: [
@@ -23,8 +23,8 @@ export const enNavbar = navbar([
     ],
   },
   {
-    text: "V2 Docs",
+    text: "V1 Docs",
     icon: "note",
-    link: "https://theme-hope.vuejs.press/",
+    link: "https://tzwtmll.github.io/docs",
   },
 ]);

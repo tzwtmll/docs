@@ -1,72 +1,64 @@
-import { hopeTheme } from "vuepress-theme-hope";
-import { enNavbar, zhNavbar } from "./navbar/index.js";
-import { enSidebar, zhSidebar } from "./sidebar/index.js";
+import { hopeTheme } from 'vuepress-theme-hope';
+import { enNavbar, zhNavbar } from './navbar/index.js';
+import { enSidebar, zhSidebar } from './sidebar/index.js';
 
 export default hopeTheme({
-  hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
-
   author: {
-    name: "Mr.Pdd",
-    url: "https://tzwtmll.github.io",
+    name: 'Mr.Pdd',
+    url: 'https://tzwtmll.github.io',
   },
-
-  iconAssets: "iconfont",
-
-  logo: "/logo.svg",
-
-  repo: "vuepress-theme-hope/vuepress-theme-hope",
-
-  docsDir: "demo/theme-docs/src",
-
+  iconAssets: 'iconfont',
+  logo: '/logo.svg',
+  repo: 'vuepress-theme-hope/vuepress-theme-hope',
+  docsDir: 'demo/theme-docs/src',
   locales: {
-    "/": {
+    '/': {
       // navbar
       navbar: enNavbar,
 
       // sidebar
       sidebar: enSidebar,
 
-      footer: "Default footer",
+      footer: 'Default footer',
 
       displayFooter: true,
 
       metaLocales: {
-        editLink: "Edit this page on GitHub",
+        editLink: 'Edit this page on GitHub',
       },
     },
 
     /**
      * Chinese locale config
      */
-    "/zh/": {
+    '/zh/': {
       // navbar
       navbar: zhNavbar,
 
       // sidebar
       sidebar: zhSidebar,
 
-      footer: "默认页脚",
+      footer: '默认页脚',
 
       displayFooter: true,
 
       // page meta
       metaLocales: {
-        editLink: "在 GitHub 上编辑此页",
+        editLink: '在 GitHub 上编辑此页',
       },
     },
   },
-
+  // 加密页面
   encrypt: {
     config: {
-      "/demo/encrypt.html": ["1234"],
-      "/zh/demo/encrypt.html": ["1234"],
+      '/demo/encrypt.html': ['1234'],
+      '/zh/demo/encrypt.html': ['1234'],
     },
   },
 
   plugins: {
     comment: {
-      // @ts-expect-error: You should generate and use your own comment service
-      provider: "Waline",
+      provider: 'Waline',
     },
 
     // all features are enabled for demo, only preserve features you need here
@@ -87,20 +79,20 @@ export default hopeTheme({
       mark: true,
       mermaid: true,
       playground: {
-        presets: ["ts", "vue"],
+        presets: ['ts', 'vue'],
       },
       presentation: {
-        plugins: ["highlight", "math", "search", "notes", "zoom"],
+        plugins: ['highlight', 'math', 'search', 'notes', 'zoom'],
       },
       stylize: [
         {
-          matcher: "Recommended",
+          matcher: 'Recommended',
           replacer: ({ tag }) => {
-            if (tag === "em")
+            if (tag === 'em')
               return {
-                tag: "Badge",
-                attrs: { type: "tip" },
-                content: "Recommended",
+                tag: 'Badge',
+                attrs: { type: 'tip' },
+                content: 'Recommended',
               };
           },
         },
