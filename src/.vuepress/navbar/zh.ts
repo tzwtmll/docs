@@ -114,6 +114,6 @@ export const zhNavbar = navbar([
   {
     text: 'V1 文档',
     icon: 'note',
-    link: 'https://tzwtmll.github.io/docs',
+    link: 'https://tzwtmll.github.io/docsv1',
   },
 ])
