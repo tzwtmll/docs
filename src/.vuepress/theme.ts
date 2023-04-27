@@ -9,7 +9,7 @@ export default hopeTheme({
   },
   iconAssets: 'iconfont',
   logo: '/assets/svg/logo.svg',
-  repo: 'vuepress-theme-hope/vuepress-theme-hope',
+  repo: 'https://github.com/tzwtmll/docs',
   docsDir: 'demo/theme-docs/src',
   locales: {
     '/': {
