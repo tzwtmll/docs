@@ -1,5 +1,5 @@
 import { hopeTheme } from 'vuepress-theme-hope'
-import { enNavbar, zhNavbar } from './navbar/index.js';
+import { enNavbar, zhNavbar } from './navbar/index.js'
 import { enSidebar, zhSidebar } from './sidebar/index.js'
 
 export default hopeTheme({
@@ -8,29 +8,10 @@ export default hopeTheme({
     url: 'https://tzwtmll.github.io',
   },
   iconAssets: 'iconfont',
-  logo: '/logo.svg',
+  logo: '/assets/svg/logo.svg',
   repo: 'vuepress-theme-hope/vuepress-theme-hope',
   docsDir: 'demo/theme-docs/src',
   locales: {
-    // '/': {
-    //   // navbar
-    //   navbar: enNavbar,
-
-    //   // sidebar
-    //   sidebar: enSidebar,
-
-    //   footer: 'Default footer',
-
-    //   displayFooter: true,
-
-    //   metaLocales: {
-    //     editLink: 'Edit this page on GitHub',
-    //   },
-    // },
-
-    /**
-     * Chinese locale config
-     */
     '/': {
       // navbar
       navbar: zhNavbar,
