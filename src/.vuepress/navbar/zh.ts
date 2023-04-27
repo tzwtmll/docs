@@ -106,13 +106,13 @@ export const zhNavbar = navbar([
     link: '/dataStructureandAlgorithm/',
     icon: '/assets/svg/data.svg',
   },
+  // {
+  //   text: '关于',
+  //   link: '/about',
+  //   icon: '/assets/svg/about.svg',
+  // },
   {
-    text: '关于',
-    link: '/about',
-    icon: '/assets/svg/about.svg',
-  },
-  {
-    text: 'V1 文档',
+    text: 'v1.0 文档',
     icon: 'note',
     link: 'https://tzwtmll.github.io/docsv1',
   },

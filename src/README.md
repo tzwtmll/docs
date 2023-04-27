@@ -41,8 +41,8 @@ features:
 
   - title: 数据结构与算法
     icon: /assets/svg/structure.svg
-    details: 新增文字对齐、上下角标、脚注、标记、任务列表、数学公式、流程图、图表与幻灯片支持
-    link: https://theme-hope.vuejs.press/zh/guide/markdown/
+    details: 数据结构与算法是程序员进阶的必修课，计算机技术更迭就是算法与数据结构的突破，只为追求更快更强
+    link: /dataStructureandAlgorithm/index.md
 
   - title: Markdown 增强
     icon: markdown

@@ -3,6 +3,12 @@ import { enNavbar, zhNavbar } from './navbar/index.js'
 import { enSidebar, zhSidebar } from './sidebar/index.js'
 
 export default hopeTheme({
+  themeColor: {
+    blue: '#2196f3',
+    red: '#f26d6d',
+    green: '#3eaf7c',
+    orange: '#fb9b5f',
+  },
   author: {
     name: 'Mr.Pdd',
     url: 'https://tzwtmll.github.io',
