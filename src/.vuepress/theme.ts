@@ -1,6 +1,6 @@
-import { hopeTheme } from 'vuepress-theme-hope';
+import { hopeTheme } from 'vuepress-theme-hope'
 import { enNavbar, zhNavbar } from './navbar/index.js';
-import { enSidebar, zhSidebar } from './sidebar/index.js';
+import { enSidebar, zhSidebar } from './sidebar/index.js'
 
 export default hopeTheme({
   author: {
@@ -12,26 +12,26 @@ export default hopeTheme({
   repo: 'vuepress-theme-hope/vuepress-theme-hope',
   docsDir: 'demo/theme-docs/src',
   locales: {
-    '/': {
-      // navbar
-      navbar: enNavbar,
+    // '/': {
+    //   // navbar
+    //   navbar: enNavbar,
 
-      // sidebar
-      sidebar: enSidebar,
+    //   // sidebar
+    //   sidebar: enSidebar,
 
-      footer: 'Default footer',
+    //   footer: 'Default footer',
 
-      displayFooter: true,
+    //   displayFooter: true,
 
-      metaLocales: {
-        editLink: 'Edit this page on GitHub',
-      },
-    },
+    //   metaLocales: {
+    //     editLink: 'Edit this page on GitHub',
+    //   },
+    // },
 
     /**
      * Chinese locale config
      */
-    '/zh/': {
+    '/': {
       // navbar
       navbar: zhNavbar,
 
@@ -93,7 +93,7 @@ export default hopeTheme({
                 tag: 'Badge',
                 attrs: { type: 'tip' },
                 content: 'Recommended',
-              };
+              }
           },
         },
       ],
@@ -161,4 +161,4 @@ export default hopeTheme({
     //   },
     // },
   },
-});
+})

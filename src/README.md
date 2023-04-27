@@ -14,6 +14,36 @@ actions:
     link: /guide/
 
 features:
+  - title: Vite 构建脚手架
+    icon: /assets/svg/vite.svg
+    details: Vite是Vue团队提供的一款构建工具，是基于Rollup进行封装整合，更加快速且简单的打包构建工具
+    link: /vite/index
+
+  - title: Webpack 构建脚手架
+    icon: /assets/svg/webpack.svg
+    details: 第一代构建工具，其生态非常庞大，对待问题有各式各样的解决方案
+    link: /webpack/index
+
+  - title: Redux 原理与使用
+    icon: /assets/svg/redux.svg
+    details: Redux是一款状态管理工具，其出名的是优秀的设计理念，多样的生态，不依赖其他框架，完全解耦，是现在最为流行的状态管理工具之一
+    link: /redux/index
+
+  - title: Typescript 的使用
+    icon: /assets/svg/ts.svg
+    details: Typescript是由微软推出的一款基于js的强类型语言，其主要用于js库的编写，具有非常高的稳定性，对项目代码可以起到稳定作用
+    link: /frontend/typescript'
+
+  - title: React 原理与构建
+    icon: /assets/svg/react.svg
+    details: 解析React的构建原理，探索react核心数据流
+    link: /frontend/react/core.md
+
+  - title: 数据结构与算法
+    icon: /assets/svg/structure.svg
+    details: 新增文字对齐、上下角标、脚注、标记、任务列表、数学公式、流程图、图表与幻灯片支持
+    link: https://theme-hope.vuejs.press/zh/guide/markdown/
+
   - title: Markdown 增强
     icon: markdown
     details: 新增文字对齐、上下角标、脚注、标记、任务列表、数学公式、流程图、图表与幻灯片支持
