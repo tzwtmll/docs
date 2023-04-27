@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-dc37e818","path":"/redux/","title":"Redux","lang":"zh-CN","frontmatter":{"title":"Redux","article":false,"feed":false,"sitemap":false},"headers":[],"git":{},"readingTime":{"minutes":0.03,"words":10},"filePathRelative":null,"excerpt":""}');export{e as data};
