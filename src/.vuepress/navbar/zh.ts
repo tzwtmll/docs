@@ -55,7 +55,7 @@ export const zhNavbar = navbar([
           {
             text: 'webpack的使用',
             link: '/webpack/index',
-            icon: '/assets/svg/webpack.svg',
+            icon: 'webpack',
           },
         ],
       },
@@ -70,12 +70,12 @@ export const zhNavbar = navbar([
           {
             text: 'typescript 的使用',
             link: '/frontend/typescript',
-            icon: '/assets/svg/ts.svg',
+            icon: 'typescript-def',
           },
           {
             text: 'React 原理',
             link: '/frontend/react/core.md',
-            icon: '/assets/svg/react.svg',
+            icon: 'React',
           },
         ],
       },
@@ -85,7 +85,7 @@ export const zhNavbar = navbar([
           {
             text: 'Redux原理',
             link: '/redux/index',
-            icon: '/assets/svg/redux.svg',
+            icon: 'redux-reducer',
           },
         ],
       },
