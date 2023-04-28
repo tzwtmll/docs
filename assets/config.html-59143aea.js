@@ -1,1 +1,0 @@
-import{_ as a,X as c,Y as t,a1 as e,a2 as o}from"./framework-decf3de5.js";const n={},r=e("h1",{id:"webpack配置",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#webpack配置","aria-hidden":"true"},"#"),o(" Webpack配置")],-1),s=[r];function _(d,i){return c(),t("div",null,s)}const h=a(n,[["render",_],["__file","config.html.vue"]]);export{h as default};

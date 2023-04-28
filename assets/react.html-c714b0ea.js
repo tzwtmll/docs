@@ -1,1 +1,0 @@
-import{_ as a,X as t,Y as c,a1 as e,a2 as r}from"./framework-decf3de5.js";const s={},o=e("h1",{id:"webpack对react的处理",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#webpack对react的处理","aria-hidden":"true"},"#"),r(" Webpack对react的处理")],-1),n=[o];function _(d,i){return t(),c("div",null,n)}const l=a(s,[["render",_],["__file","react.html.vue"]]);export{l as default};

@@ -1,1 +1,0 @@
-import{_ as a,X as t,Y as c,a1 as e,a2 as r}from"./framework-decf3de5.js";const s={},o=e("h1",{id:"webpack准备",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#webpack准备","aria-hidden":"true"},"#"),r(" Webpack准备")],-1),n=[o];function _(d,i){return t(),c("div",null,n)}const l=a(s,[["render",_],["__file","ready.html.vue"]]);export{l as default};
