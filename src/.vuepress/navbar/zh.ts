@@ -2,7 +2,7 @@ import { navbar } from 'vuepress-theme-hope'
 
 export const zhNavbar = navbar([
   '/',
-  { text: 'Demo', icon: 'discover', link: '/demo/' },
+  // { text: 'Demo', icon: 'discover', link: '/demo/' },
   {
     text: '指南',
     icon: 'creative',
@@ -103,8 +103,18 @@ export const zhNavbar = navbar([
   },
   {
     text: '数据结构与算法',
-    link: '/dataStructureandAlgorithm/',
+    // link: '/dataStructureandAlgorithm/',
     icon: '/assets/svg/data.svg',
+    children: [
+      {
+        text: '数据结构',
+        link: '/dataStructureandAlgorithm/dataStructure',
+      },
+      {
+        text: '算法',
+        link: '/dataStructureandAlgorithm/algorithm',
+      },
+    ],
   },
   // {
   //   text: '关于',

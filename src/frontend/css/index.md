@@ -1,5 +1,0 @@
----
-permalink: /css/index
----
-
-# css

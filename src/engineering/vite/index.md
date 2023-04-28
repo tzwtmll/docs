@@ -1,8 +1,9 @@
 ---
 permalink: /vite/index
+icon: /assets/svg/vite.svg
 ---
 
-# 使用 vite 构建项目
+# Vite 构建项目
 
 ## 初始化文件
 

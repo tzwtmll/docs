@@ -1,3 +1,7 @@
+---
+permalink: /vite/study/index
+icon: /assets/svg/side/study.svg
+---
 # 学习 vite
 
 ::: tip

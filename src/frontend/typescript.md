@@ -1,3 +1,6 @@
+---
+icon: /assets/svg/side/ts.svg
+---
 # Typescript
 
 - 在 `ts` 中大写分别有什么作用?

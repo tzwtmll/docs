@@ -1,5 +1,5 @@
 ---
-permalink: /redux/index
+icon: /assets/svg/side/redux.svg
 ---
 
 # 解析原理与使用 redux

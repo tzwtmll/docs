@@ -1,5 +1,6 @@
 ---
 permalink: /interview/index
+icon: /assets/svg/side/interview.svg
 ---
 
 # 面试题

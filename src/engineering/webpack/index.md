@@ -1,7 +1,8 @@
 ---
 permalink: /webpack/index
+icon: /assets/svg/side/webpack.svg
 ---
-# 安装
+# webpack应用
 
 ```sh
 npm i webpack webpack-cil -D
