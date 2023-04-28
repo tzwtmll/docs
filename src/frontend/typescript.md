@@ -1,5 +1,5 @@
 ---
-icon: /assets/svg/side/ts.svg
+icon: typescript-def
 ---
 # Typescript
 

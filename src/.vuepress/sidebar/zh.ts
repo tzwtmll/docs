@@ -4,14 +4,14 @@ export const zhSidebar = sidebar({
   '/': [
     // "/",
     // 侧边栏
-    {
-      icon: "discover",
-      text: "案例",
-      prefix: "demo/",
-      link: "demo/",
-      children: "structure",
-      collapsible: true,
-    },
+    // {
+    //   icon: "discover",
+    //   text: "案例",
+    //   prefix: "demo/",
+    //   link: "demo/",
+    //   children: "structure",
+    //   collapsible: true,
+    // },
     // {
     //   text: "文档",
     //   icon: "note",
@@ -21,35 +21,35 @@ export const zhSidebar = sidebar({
     // "slides",
     {
       text: '前端',
-      icon: '/assets/svg/side/jsLogo.svg',
+      icon: "js",
       prefix: 'frontend/',
       children: 'structure',
       collapsible: true,
     },
     {
       text: '后端',
-      icon: '/assets/svg/side/backend.svg',
+      icon: 'fuwuqi',
       prefix: 'backend/',
       children: 'structure',
       collapsible: true,
     },
     {
       text: '工程化',
-      icon: '/assets/svg/side/project.svg',
+      icon: 'gongcheng',
       prefix: 'engineering/',
       children: 'structure',
       collapsible: true,
     },
     {
       text: '数据结构与算法',
-      icon: '/assets/svg/side/data.svg',
+      icon: 'suanfaku',
       prefix: 'dataStructureandAlgorithm/',
       children: 'structure',
       collapsible: true,
     },
     {
       text: '搭建与部署',
-      icon: '/assets/svg/side/deploy.svg',
+      icon: 'liuchengbushu',
       prefix: 'buildAndDeploy/',
       children: 'structure',
       collapsible: true,

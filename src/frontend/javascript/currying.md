@@ -1,6 +1,6 @@
 ---
 permalink: /javascript/currying
-icon: /assets/svg/side/js.svg
+icon: js
 ---
 
 # 函数柯里化概念

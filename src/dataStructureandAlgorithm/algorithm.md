@@ -1,4 +1,5 @@
 ---
-icon:   /assets/svg/side/suanfa.svg
+icon: xinpian
 ---
+
 # 算法

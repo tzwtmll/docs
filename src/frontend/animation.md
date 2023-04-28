@@ -1,5 +1,5 @@
 ---
-icon: /assets/svg/side/css.svg
+icon: css
 ---
 
 # 动画

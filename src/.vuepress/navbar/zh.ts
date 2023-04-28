@@ -1,11 +1,15 @@
 import { navbar } from 'vuepress-theme-hope'
 
 export const zhNavbar = navbar([
-  '/',
+  {
+    text: '主页',
+    icon: 'wxbzhuye',
+    link: '/',
+  },
   // { text: 'Demo', icon: 'discover', link: '/demo/' },
   {
     text: '指南',
-    icon: 'creative',
+    icon: 'dengpao',
     prefix: 'guide/',
     link: '/guide',
     // children: [
@@ -25,7 +29,7 @@ export const zhNavbar = navbar([
   },
   {
     text: '前端',
-    icon: '/assets/svg/jsLogo.svg',
+    icon: 'js',
     children: [
       {
         text: 'Vite',
@@ -93,7 +97,7 @@ export const zhNavbar = navbar([
   },
   {
     text: '后端',
-    icon: '/assets/svg/backend.svg',
+    icon: 'fuwuqi',
     children: [
       {
         text: 'Nestjs',
@@ -104,7 +108,7 @@ export const zhNavbar = navbar([
   {
     text: '数据结构与算法',
     // link: '/dataStructureandAlgorithm/',
-    icon: '/assets/svg/data.svg',
+    icon: 'suanfaku',
     children: [
       {
         text: '数据结构',
@@ -123,7 +127,7 @@ export const zhNavbar = navbar([
   // },
   {
     text: 'v1.0 文档',
-    icon: 'note',
+    icon: 'shiyongwendang',
     link: 'https://tzwtmll.github.io/docsv1',
   },
 ])

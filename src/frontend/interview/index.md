@@ -1,6 +1,6 @@
 ---
 permalink: /interview/index
-icon: /assets/svg/side/interview.svg
+icon: mianshianpai
 ---
 
 # 面试题

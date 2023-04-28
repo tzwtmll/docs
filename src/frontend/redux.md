@@ -1,5 +1,5 @@
 ---
-icon: /assets/svg/side/redux.svg
+icon: redux-reducer
 ---
 
 # 解析原理与使用 redux

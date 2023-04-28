@@ -1,6 +1,6 @@
 ---
 permalink: /react/core
-icon: /assets/svg/side/react.svg
+icon: React
 ---
 
 # React 框架原理

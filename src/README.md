@@ -22,17 +22,17 @@ features:
   - title: Webpack 构建脚手架
     icon: /assets/svg/webpack.svg
     details: 第一代构建工具，其生态非常庞大，对待问题有各式各样的解决方案
-    link: /webpack/index
+    link: /engineering/webpack/ready
 
   - title: Redux 原理与使用
     icon: /assets/svg/redux.svg
     details: Redux是一款状态管理工具，其出名的是优秀的设计理念，多样的生态，不依赖其他框架，完全解耦，是现在最为流行的状态管理工具之一
-    link: /redux/index
+    link: /frontend/redux
 
   - title: Typescript 的使用
     icon: /assets/svg/ts.svg
     details: Typescript是由微软推出的一款基于js的强类型语言，其主要用于js库的编写，具有非常高的稳定性，对项目代码可以起到稳定作用
-    link: /frontend/typescript'
+    link: /frontend/typescript
 
   - title: React 原理与构建
     icon: /assets/svg/react.svg

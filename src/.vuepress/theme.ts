@@ -3,6 +3,8 @@ import { enNavbar, zhNavbar } from './navbar/index.js'
 import { enSidebar, zhSidebar } from './sidebar/index.js'
 
 export default hopeTheme({
+  // 复制
+  copyCode: {},
   themeColor: {
     blue: '#2196f3',
     red: '#f26d6d',
@@ -13,7 +15,7 @@ export default hopeTheme({
     name: 'Mr.Pdd',
     url: 'https://tzwtmll.github.io',
   },
-  iconAssets: 'iconfont',
+  iconAssets: '//at.alicdn.com/t/c/font_4044544_9krmqyvnl3.css',
   logo: '/assets/svg/logo.svg',
   repo: 'https://github.com/tzwtmll/docs',
   docsDir: 'demo/theme-docs/src',
