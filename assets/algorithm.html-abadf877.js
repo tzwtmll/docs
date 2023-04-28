@@ -1,0 +1,1 @@
+import{_ as a,X as t,Y as r,a1 as e,a2 as o}from"./framework-decf3de5.js";const c={},s=e("h1",{id:"算法",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#算法","aria-hidden":"true"},"#"),o(" 算法")],-1),n=[s];function _(d,i){return t(),r("div",null,n)}const l=a(c,[["render",_],["__file","algorithm.html.vue"]]);export{l as default};

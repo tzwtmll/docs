@@ -1,0 +1,1 @@
+import{_ as e,X as t,Y as _,a1 as c}from"./framework-decf3de5.js";const o={},s=c("p",null,"功能详情...",-1),a=[s];function n(r,l){return t(),_("div",null,a)}const f=e(o,[["render",n],["__file","ray.html.vue"]]);export{f as default};

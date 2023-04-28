@@ -1,0 +1,1 @@
+import{_ as a,X as t,Y as n,a1 as e,a2 as o}from"./framework-decf3de5.js";const c={},r=e("h1",{id:"动画",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#动画","aria-hidden":"true"},"#"),o(" 动画")],-1),s=[r];function _(i,d){return t(),n("div",null,s)}const l=a(c,[["render",_],["__file","animation.html.vue"]]);export{l as default};

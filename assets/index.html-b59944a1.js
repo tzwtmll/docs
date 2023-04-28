@@ -1,0 +1,1 @@
+import{_ as e,X as t,Y as o,Z as n}from"./framework-decf3de5.js";const s={};function c(r,_){return t(),o("div",null,[n(" 配置项的相关说明详见 [项目主页配置](https://theme-hope.vuejs.press/zh/guide/layout/home/)。 ")])}const l=e(s,[["render",c],["__file","index.html.vue"]]);export{l as default};

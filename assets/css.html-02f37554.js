@@ -1,0 +1,1 @@
+import{_ as s,X as c,Y as a,a1 as e,a2 as t}from"./framework-decf3de5.js";const r={},o=e("h1",{id:"webpack对css的处理",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#webpack对css的处理","aria-hidden":"true"},"#"),t(" Webpack对css的处理")],-1),n=[o];function _(d,i){return c(),a("div",null,n)}const l=s(r,[["render",_],["__file","css.html.vue"]]);export{l as default};
