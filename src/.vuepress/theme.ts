@@ -27,7 +27,7 @@ export default hopeTheme({
       // sidebar
       sidebar: zhSidebar,
 
-      footer: '默认页脚',
+      footer: 'Thank you for checking my blog . Contact me 483662261@qq.com',
 
       displayFooter: true,
 

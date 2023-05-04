@@ -66,6 +66,7 @@ export const zhNavbar = navbar([
           {
             text: '面试题',
             link: '/interview/index',
+            icon: 'mianshianpai',
           },
           {
             text: 'typescript 的使用',
@@ -102,6 +103,7 @@ export const zhNavbar = navbar([
       {
         text: 'Nestjs',
         link: '/nestjs/index',
+        icon: 'nest-service',
       },
     ],
   },
@@ -113,10 +115,12 @@ export const zhNavbar = navbar([
       {
         text: '数据结构',
         link: '/dataStructureandAlgorithm/dataStructure',
+        icon: 'shujujiegou-01',
       },
       {
         text: '算法',
         link: '/dataStructureandAlgorithm/algorithm',
+        icon: 'xinpian',
       },
     ],
   },
