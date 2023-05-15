@@ -21,7 +21,7 @@ export const zhSidebar = sidebar({
     // "slides",
     {
       text: '前端',
-      icon: "js",
+      icon: 'js',
       prefix: 'frontend/',
       children: 'structure',
       collapsible: true,
@@ -51,6 +51,13 @@ export const zhSidebar = sidebar({
       text: '搭建与部署',
       icon: 'liuchengbushu',
       prefix: 'buildAndDeploy/',
+      children: 'structure',
+      collapsible: true,
+    },
+    {
+      text: '工具',
+      icon: 'gongjuyong',
+      prefix: 'tool/',
       children: 'structure',
       collapsible: true,
     },

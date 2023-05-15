@@ -124,11 +124,11 @@ export const zhNavbar = navbar([
       },
     ],
   },
-  // {
-  //   text: '关于',
-  //   link: '/about',
-  //   icon: '/assets/svg/about.svg',
-  // },
+  {
+    text: '工具',
+    link: '/tool',
+    icon: '/assets/svg/about.svg',
+  },
   {
     text: 'v1.0 文档',
     icon: 'shiyongwendang',
