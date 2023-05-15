@@ -1,0 +1,1 @@
+import{_ as a,X as t,Y as c,a1 as e,a2 as r}from"./framework-decf3de5.js";const s={},o=e("h1",{id:"yapi",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#yapi","aria-hidden":"true"},"#"),r(" Yapi")],-1),i=[o];function n(_,d){return t(),c("div",null,i)}const l=a(s,[["render",n],["__file","yapi.html.vue"]]);export{l as default};
