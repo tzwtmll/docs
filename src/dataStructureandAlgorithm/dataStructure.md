@@ -17,7 +17,7 @@ tag:
   ::: tip 与 js 数组有何种区别？
 
 1.  在 javascript 中，比如我们使用`pop`或`shift`对数组第一项进行了处理，其实第一项是被空缺了，接下来再由 javascript 将每一项都向前或向后移动一位，在我们看来是没有任何异常的，这是由 v8 引擎以及现代 cpu 的强大算力实现，假如如果数据量异常巨大可能就会导致程序缓慢。这时数据结构的作用就出来了
-2.  数据结构能够使程序更加快速，比如`react17`发布的[fiber 数据结构](/frontend/react/core.md#React-Diff)
+2.  数据结构能够使程序更加快速，比如`react17`发布的[fiber 数据结构](/frontend/react/core.md#diff)
     ![Fiber](/fiber.webp)
     :::
 

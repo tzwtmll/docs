@@ -6,7 +6,7 @@ icon: React
 # React 框架原理
 
 - [React 完整代码](code.md)
-- [Build your own React](https://pomb.us/build-your-own-react/)
+- [Build your own React 建议先阅读此段代码](https://pomb.us/build-your-own-react/)
 
 ```sh
 git clone https://github.com/tzwtmll/source_react
@@ -263,7 +263,7 @@ function createDOM(fiber) {
 
 ```js
 /**
- * @description
+ * @description 构建节点之间的关系，已经更新dom的操作
  * @param fiber
  * @param fiber.props.children
  */
@@ -315,7 +315,7 @@ function reconcileChildren(wipFiber, elements) {
       }
     }
     /**
-     * @description 删除，有缓存，但是type不一样
+     * @description 删除，有缓存，但是type不一样，删除必定伴随着新增，这是react diff的一个特点
      */
     if (oldFiber && !sameType) {
       oldFiber.effectTag = 'DELETION'
@@ -354,7 +354,7 @@ function reconcileChildren(wipFiber, elements) {
 
 ---
 
-## React-Diff
+## Diff
 
 1.  同级之间比较
 2.  如果发现`key`发送改变，则直接删除该节点及其子节点`reconcileChildren-56行`，这样就将起复杂度由 O(n3)转变欸 O(n),极大提高了递归效率
@@ -419,6 +419,46 @@ function commitDeletion(fiber, parentDOM) {
     // 向下寻找最近的 dom ，因为函数没有dom
     commitDeletion(fiber.child, parentDOM)
   }
+}
+```
+
+## commitRoot
+
+```js
+function commitRoot() {
+  deletions.forEach(commitWork)
+  commitWork(wipRoot.child) //到此时，fiber 结构已经构建完
+  currentRoot = wipRoot // 保存这一次的 fiber 为一下 render 提供缓存数据
+  wipRoot = null
+}
+```
+
+## commitWork
+
+```js
+function commitWork(fiber) {
+  // 此时的 fiber 就是根节点下面的第一个 div
+  // 在这里我们进行一个组装，将异步转化为同步，此时 fiber 各个的关系已经全部构建好
+  if (!fiber) {
+    return
+  }
+  // 寻找最近的父dom节点
+  let parentDomFiber = fiber.parent
+  while (!parentDomFiber) {
+    parentDomFiber = parentDomFiber.parent.dom
+  }
+  var parentDOM = parentDomFiber.dom
+  // parentDOM.append(fiber.dom) 太粗暴了
+  if (fiber.effectTag === 'PLACEMENT' && fiber.dom) {
+    parentDOM.append(fiber.dom) // 创建
+  } else if (fiber.effectTag === 'UPDATE' && fiber.dom) {
+    updateDOM(fiber.dom, fiber.alternate.props, fiber.props)
+  } else if (fiber.effectTag === 'DELETION' && fiber.props) {
+    // parentDOM.removeChild(fiber.dom)
+    commitDeletion(fiber, parentDOM)
+  }
+  commitWork(fiber.child)
+  commitWork(fiber.sibling)
 }
 ```
 
