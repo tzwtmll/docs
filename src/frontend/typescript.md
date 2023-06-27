@@ -1,6 +1,7 @@
 ---
 icon: typescript-def
 ---
+
 # Typescript
 
 - 在 `ts` 中大写分别有什么作用?
@@ -11,25 +12,25 @@ icon: typescript-def
 ---
 
 ```ts
-let str: string = 'pdd'
-let num: number = '123'
-let strArr: string[] = ['P', 'D', 'D']
-let numArr: number[] = [4, 5, 6]
+let str: string = "pdd";
+let num: number = "123";
+let strArr: string[] = ["P", "D", "D"];
+let numArr: number[] = [4, 5, 6];
 // 对象有三种书写方式
 let strObj1: {
-  str: string
-  num: number
-} = { str: 'pdd', num: 123 }
+  str: string;
+  num: number;
+} = { str: "pdd", num: 123 };
 type Data = {
-  str: string
-  num: number
-}
-let strObj2: Data = { str: 'pdd', num: 123 }
+  str: string;
+  num: number;
+};
+let strObj2: Data = { str: "pdd", num: 123 };
 interface Data {
-  str: string
-  num: number
+  str: string;
+  num: number;
 }
-let strObj3: Data = { str: 'pdd', num: 123 }
+let strObj3: Data = { str: "pdd", num: 123 };
 ```
 
 ::: tip 小知识点
@@ -38,26 +39,26 @@ let strObj3: Data = { str: 'pdd', num: 123 }
 
 ```ts
 interface A {
-  name: string
+  name: string;
 }
 interface B extends A {
-  age: number
+  age: number;
 }
 let people: B = {
-  name: 'pdd',
+  name: "pdd",
   age: 24,
-}
+};
 ```
 
 - 各种符号的使用
 
 ```ts
 interface Data {
-  str?: string // 表示可选
-  [keyName: any]: any // 表示可以有其它类型包括所有
-  [key: string]: string // 表示键为string值为string
+  str?: string; // 表示可选
+  [keyName: any]: any; // 表示可以有其它类型包括所有
+  [key: string]: string; // 表示键为string值为string
 }
-;[] // 添加 [] 表示为数组对象 [{}]
+[]; // 添加 [] 表示为数组对象 [{}]
 ```
 
 :::
@@ -75,16 +76,16 @@ interface Data {
 ```ts
 // ----example-----
 function Fn(string) {
-  console.log(string)
+  console.log(string);
 }
-Fn('pdd')
+Fn("pdd");
 // -----------
 interface Data<T> {
-  name: T
+  name: T;
 }
 let str: Data<string> = {
-  name: 'pdd',
-}
+  name: "pdd",
+};
 ```
 
 ### typeof
@@ -93,35 +94,35 @@ let str: Data<string> = {
 
 ```ts
 let obj = {
-  name: 'pdd',
+  name: "pdd",
   age: 24,
-}
-type A = typeof obj
+};
+type A = typeof obj;
 interface B {
-  data: typeof obj
+  data: typeof obj;
 }
 let obj1: A = {
-  name: 'pp',
+  name: "pp",
   age: 5,
-}
+};
 let obj2: B = {
   data: {
-    name: 'yy',
+    name: "yy",
     age: 3,
   },
-}
+};
 // 对函数使用也是一样
 function fn() {
   return {
-    name: 'pdd',
+    name: "pdd",
     age: 24,
-  }
+  };
 }
-type A = typeof fn
+type A = typeof fn;
 const f: A = () => ({
-  name: 'PP',
+  name: "PP",
   age: 5,
-})
+});
 ```
 
 ### keyof
@@ -130,13 +131,13 @@ const f: A = () => ({
 
 ```ts
 type A = {
-  name: string
-  age: number
-}
-type B = keyof A //  B = 'name' | 'age'
+  name: string;
+  age: number;
+};
+type B = keyof A; //  B = 'name' | 'age'
 // 只能使用 name 或者 age
-const key1: B = 'name'
-const key2: B = 'age'
+const key1: B = "name";
+const key2: B = "age";
 ```
 
 ::: tip 最常见使用
@@ -146,14 +147,14 @@ const key2: B = 'age'
 
 ```ts
 export const getProperty = <T, K extends keyof T>(obj: T, key: K): T[K] => {
-  return obj[key]
-}
+  return obj[key];
+};
 
 const person = {
-  name: 'CJ',
+  name: "CJ",
   age: 18,
-}
-console.log(getProperty(person, 'name'))
+};
+console.log(getProperty(person, "name"));
 ```
 
 - 配合映射类型
@@ -161,15 +162,15 @@ console.log(getProperty(person, 'name'))
 
 ```ts
 type OptionsFlags<T> = {
-  [Property in keyof T]: boolean
-}
+  [Property in keyof T]: boolean;
+};
 
 type FeatureFlags = {
-  darkMode: () => void
-  newUserProfile: () => void
-}
+  darkMode: () => void;
+  newUserProfile: () => void;
+};
 
-type FeatureOptions = OptionsFlags<FeatureFlags>
+type FeatureOptions = OptionsFlags<FeatureFlags>;
 
 // 相当于
 // type FeatureOptions = {
@@ -196,5 +197,49 @@ let obj:B ={
 ```
 
 :::
+
+## Pick Omit Partial
+
+```ts
+interface People {
+  name: string;
+  age: number;
+  grade: number;
+}
+// 选择一个接口的部分属性 Pick
+interface A extends Pick<People, "age"> {}
+let a: A = {
+  age: 1,
+};
+// 排除一个接口的部分属性 Omit
+interface B extends Omit<People, "age"> {}
+let b: B = {
+  name: "1",
+  grade: 1,
+};
+// 选择一个接口的全部属性定义为可选 Partial
+interface C extends Partial<People> {}
+let c: C = {
+  name: "1",
+  age: 1,
+  // grade: 1 此时可不选
+};
+/**
+ * @description 实现 Pick Omit Partial
+ */
+type MyPick<T, K extends keyof T> = {
+  [P in K]: T[P];
+};
+type MyOmit<T, K extends keyof T> = {
+  [P in Exclude<keyof T, K>]: T[P];
+};
+type MyPartial<T> = {
+  [P in keyof T]?: T[P];
+};
+type MyExclude<T, U> = T extends U ? never : T;
+type MyExtract<T, U> = T extends U ? T : never;
+type MyNonNullable<T> = T extends null | undefined ? never : T;
+```
+
 :::tip 正在持续开发中
 :::
