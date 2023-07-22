@@ -43,7 +43,6 @@ export default function Home() {
           setModalData(record)
           setModalMethod(UserEnum.查看)
       }>新增</a>
-      // 弹窗以Modal结尾
       <UserModal
         open={userVisible}
         modalMethod={modalMethod}
@@ -64,6 +63,7 @@ interface Props {
   modalMethod:UserEnum
   modalData:Data
 }
+// 弹窗以Modal结尾
 const UserModal = (props:Props) => {
   /**
    * @description 回显
