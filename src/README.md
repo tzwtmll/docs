@@ -14,6 +14,11 @@ actions:
     link: /buildAndDeploy/
 
 features:
+  - title: 代码规范与风格
+    icon: /assets/svg/code.svg
+    details: 这是我自己总结的一套代码风格，主要是对typescript与react使用，具有一个规范的代码思路，提升开发效率
+    link: /code/standard
+
   - title: Vite 构建脚手架
     icon: /assets/svg/vite.svg
     details: Vite是Vue团队提供的一款构建工具，是基于Rollup进行封装整合，更加快速且简单的打包构建工具

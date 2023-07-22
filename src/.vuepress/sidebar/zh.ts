@@ -1,7 +1,7 @@
-import { sidebar } from 'vuepress-theme-hope'
+import { sidebar } from "vuepress-theme-hope";
 
 export const zhSidebar = sidebar({
-  '/': [
+  "/": [
     // "/",
     // 侧边栏
     // {
@@ -20,46 +20,54 @@ export const zhSidebar = sidebar({
     // },
     // "slides",
     {
-      text: '前端',
-      icon: 'js',
-      prefix: 'frontend/',
-      children: 'structure',
+      text: "代码规范",
+      icon: "guifan",
+      // prefix: "code/",
+      link: "code/standard.md",
+      // children: "structure",
       collapsible: true,
     },
     {
-      text: '后端',
-      icon: 'fuwuqi',
-      prefix: 'backend/',
-      children: 'structure',
+      text: "前端",
+      icon: "js",
+      prefix: "frontend/",
+      children: "structure",
       collapsible: true,
     },
     {
-      text: '工程化',
-      icon: 'gongcheng',
-      prefix: 'engineering/',
-      children: 'structure',
+      text: "后端",
+      icon: "fuwuqi",
+      prefix: "backend/",
+      children: "structure",
       collapsible: true,
     },
     {
-      text: '数据结构与算法',
-      icon: 'suanfaku',
-      prefix: 'dataStructureandAlgorithm/',
-      children: 'structure',
+      text: "工程化",
+      icon: "gongcheng",
+      prefix: "engineering/",
+      children: "structure",
       collapsible: true,
     },
     {
-      text: '搭建与部署',
-      icon: 'liuchengbushu',
-      prefix: 'buildAndDeploy/',
-      children: 'structure',
+      text: "数据结构与算法",
+      icon: "suanfaku",
+      prefix: "dataStructureandAlgorithm/",
+      children: "structure",
       collapsible: true,
     },
     {
-      text: '工具',
-      icon: 'gongjuyong',
-      prefix: 'tool/',
-      children: 'structure',
+      text: "搭建与部署",
+      icon: "liuchengbushu",
+      prefix: "buildAndDeploy/",
+      children: "structure",
+      collapsible: true,
+    },
+    {
+      text: "工具",
+      icon: "gongjuyong",
+      prefix: "tool/",
+      children: "structure",
       collapsible: true,
     },
   ],
-})
+});

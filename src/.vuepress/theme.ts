@@ -1,53 +1,53 @@
-import { hopeTheme } from 'vuepress-theme-hope'
-import { enNavbar, zhNavbar } from './navbar/index.js'
-import { enSidebar, zhSidebar } from './sidebar/index.js'
+import { hopeTheme } from "vuepress-theme-hope";
+import { enNavbar, zhNavbar } from "./navbar/index.js";
+import { enSidebar, zhSidebar } from "./sidebar/index.js";
 
 export default hopeTheme({
   // 复制
   copyCode: {},
   themeColor: {
-    blue: '#2196f3',
-    red: '#f26d6d',
-    green: '#3eaf7c',
-    orange: '#fb9b5f',
+    blue: "#2196f3",
+    red: "#f26d6d",
+    green: "#3eaf7c",
+    orange: "#fb9b5f",
   },
   author: {
-    name: 'Mr.Pdd',
-    url: 'https://tzwtmll.github.io',
+    name: "Mr.Pdd",
+    url: "https://tzwtmll.github.io",
   },
-  iconAssets: '//at.alicdn.com/t/c/font_4044544_5rep6ujksbr.css',
-  logo: '/assets/svg/logo.svg',
-  repo: 'https://github.com/tzwtmll/docs',
-  docsDir: 'demo/theme-docs/src',
+  iconAssets: "//at.alicdn.com/t/c/font_4044544_om3jvvzrk9.css",
+  logo: "/assets/svg/logo.svg",
+  repo: "https://github.com/tzwtmll/docs",
+  docsDir: "demo/theme-docs/src",
   locales: {
-    '/': {
+    "/": {
       // navbar
       navbar: zhNavbar,
 
       // sidebar
       sidebar: zhSidebar,
 
-      footer: 'Thank you for checking my blog . Contact me 483662261@qq.com',
+      footer: "Thank you for checking my blog . Contact me 483662261@qq.com",
 
       displayFooter: true,
 
       // page meta
       metaLocales: {
-        editLink: '在 GitHub 上编辑此页',
+        editLink: "在 GitHub 上编辑此页",
       },
     },
   },
   // 加密页面
   encrypt: {
     config: {
-      '/demo/encrypt.html': ['1234'],
-      '/zh/demo/encrypt.html': ['1234'],
+      "/demo/encrypt.html": ["1234"],
+      "/zh/demo/encrypt.html": ["1234"],
     },
   },
 
   plugins: {
     comment: {
-      provider: 'Waline',
+      provider: "Waline",
     },
 
     // all features are enabled for demo, only preserve features you need here
@@ -68,21 +68,21 @@ export default hopeTheme({
       mark: true,
       mermaid: true,
       playground: {
-        presets: ['ts', 'vue'],
+        presets: ["ts", "vue"],
       },
       presentation: {
-        plugins: ['highlight', 'math', 'search', 'notes', 'zoom'],
+        plugins: ["highlight", "math", "search", "notes", "zoom"],
       },
       stylize: [
         {
-          matcher: 'Recommended',
+          matcher: "Recommended",
           replacer: ({ tag }) => {
-            if (tag === 'em')
+            if (tag === "em")
               return {
-                tag: 'Badge',
-                attrs: { type: 'tip' },
-                content: 'Recommended',
-              }
+                tag: "Badge",
+                attrs: { type: "tip" },
+                content: "Recommended",
+              };
           },
         },
       ],
@@ -150,4 +150,4 @@ export default hopeTheme({
     //   },
     // },
   },
-})
+});
