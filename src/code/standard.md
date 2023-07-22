@@ -83,7 +83,9 @@ const UserModal = (props:Props) => {
 - 开始主要是对风格依旧变量命名进行约束
   :::
 
-## 文件目录
+## types 文件配置
+
+> 文件目录
 
 ```text
 .
@@ -94,8 +96,6 @@ const UserModal = (props:Props) => {
 │   ├── user.ts // 用户相关类型
 │   └── index.ts  // 全局导出types
 ```
-
-## types 文件配置
 
 - /types/user.ts
   > eg.这个文件我们导出 user 相关的类型
