@@ -25,38 +25,44 @@ tag:
 // 创建一个calss，为后续实例准备
 class Node {
   constructor(element) {
-    this.element = element
-    this.next = null
+    this.element = element;
+    this.next = null;
   }
 }
 // 单链
 class LinkedList {
   constructor() {
     // 索引
-    this.count = 0
+    this.count = 0;
     // 第一项
-    this.head = null
+    this.head = null;
   }
   // 添加元素-方法
   push(element) {
     // 实例化一个对象
-    const node = new Node(element)
+    const node = new Node(element);
     // 第一项
     if (this.head === null) {
-      this.head = node
+      this.head = node;
     } else {
       // 作一下命名处理，便于理解
-      let current = this.head
+      let current = this.head;
       // 第二项以后就拼接在前一项的结尾
       while (current.next !== null) {
-        current = current.next
+        current = current.next;
       }
-      current.next = node
+      current.next = node;
     }
     // 添加索引
-    this.count++
+    this.count++;
   }
 }
+```
+
+### 二叉搜索树
+
+```js
+
 ```
 
 ::: tip 正在开发中。。。

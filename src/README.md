@@ -49,6 +49,16 @@ features:
     details: 数据结构与算法是程序员进阶的必修课，计算机技术更迭就是算法与数据结构的突破，只为追求更快更强
     link: /dataStructureandAlgorithm/dataStructure.md
 
+  - title: Next.js 构建脚手架
+    icon: /assets/svg/nextjs.svg
+    details: 其优秀的SSR方案，让前端开发者可以更加专注于业务开发，更好的支持SEO，主要使用在H5和官网
+    link: /frontend/nextjs/index.md
+
+  - title: Taro 构建小程序
+    icon: /assets/svg/applet.svg
+    details: Taro 是一个开放式跨端跨框架解决方案，支持使用 React/Vue/Nerv 等框架来开发 微信 / 京东 / 百度 / 支付宝 / 字节跳动 / QQ / 飞书 小程序 / H5 / RN 等应用。
+    link: /frontend/taro/index.md
+
   # - title: Markdown 增强
   #   icon: markdown
   #   details: 新增文字对齐、上下角标、脚注、标记、任务列表、数学公式、流程图、图表与幻灯片支持
