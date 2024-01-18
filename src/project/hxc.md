@@ -2,11 +2,11 @@
 
 ## 汇信昌后台管理
 
-![Fiber](/hxc/home.jpg)
+![汇信昌后台管理](/hxc/home.jpg)
 
 ## 汇信昌小程序
 
-![Fiber](/hxc/applet.jpg)
+![汇信昌小程序](/hxc/applet.jpg)
 
 ::: tip
 正在开发中
