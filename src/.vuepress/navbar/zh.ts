@@ -1,17 +1,17 @@
-import { navbar } from 'vuepress-theme-hope'
+import { navbar } from "vuepress-theme-hope";
 
 export const zhNavbar = navbar([
   {
-    text: '主页',
-    icon: 'wxbzhuye',
-    link: '/',
+    text: "主页",
+    icon: "wxbzhuye",
+    link: "/",
   },
   // { text: 'Demo', icon: 'discover', link: '/demo/' },
   {
-    text: '指南',
-    icon: 'dengpao',
-    prefix: 'guide/',
-    link: '/guide',
+    text: "指南",
+    icon: "dengpao",
+    prefix: "guide/",
+    link: "/guide",
     // children: [
     //   {
     //     text: 'Bar',
@@ -28,65 +28,65 @@ export const zhNavbar = navbar([
     // ],
   },
   {
-    text: '前端',
-    icon: 'js',
+    text: "前端",
+    icon: "js",
     children: [
       {
-        text: 'Vite',
+        text: "Vite",
         children: [
           {
-            text: 'vite搭建框架',
-            link: '/vite/index',
-            icon: '/assets/svg/vite.svg',
+            text: "vite搭建框架",
+            link: "/vite/index",
+            icon: "/assets/svg/vite.svg",
           },
           {
-            text: 'mock的使用',
-            link: '/vite/plugin/mock',
+            text: "mock的使用",
+            link: "/vite/plugin/mock",
           },
           {
-            text: '动态路由的使用',
-            link: '/vite/plugin/router',
+            text: "动态路由的使用",
+            link: "/vite/plugin/router",
           },
         ],
       },
       {
-        text: 'Webpack',
+        text: "Webpack",
         children: [
           {
-            text: 'webpack的使用',
-            link: '/webpack/index',
-            icon: 'webpack',
+            text: "webpack的使用",
+            link: "/webpack/index",
+            icon: "webpack",
           },
         ],
       },
       {
-        text: 'Javascript模块',
+        text: "Javascript模块",
         children: [
-          { text: '函数柯里化', link: '/javascript/currying' },
+          { text: "函数柯里化", link: "/javascript/currying" },
           {
-            text: '面试题',
-            link: '/interview/index',
-            icon: 'mianshianpai',
+            text: "面试题",
+            link: "/interview/index",
+            icon: "mianshianpai",
           },
           {
-            text: 'typescript 的使用',
-            link: '/frontend/typescript',
-            icon: 'typescript-def',
+            text: "typescript 的使用",
+            link: "/frontend/typescript",
+            icon: "typescript-def",
           },
           {
-            text: 'React 原理',
-            link: '/frontend/react/core.md',
-            icon: 'React',
+            text: "React 原理",
+            link: "/frontend/react/core.md",
+            icon: "React",
           },
         ],
       },
       {
-        text: '状态管理',
+        text: "状态管理",
         children: [
           {
-            text: 'Redux原理',
-            link: '/redux/index',
-            icon: 'redux-reducer',
+            text: "Redux原理",
+            link: "/redux/index",
+            icon: "redux-reducer",
           },
         ],
       },
@@ -97,41 +97,41 @@ export const zhNavbar = navbar([
     ],
   },
   {
-    text: '后端',
-    icon: 'fuwuqi',
+    text: "后端",
+    icon: "fuwuqi",
     children: [
       {
-        text: 'Nestjs',
-        link: '/nestjs/index',
-        icon: 'nest-service',
+        text: "Nestjs",
+        link: "/nestjs/index",
+        icon: "nest-service",
       },
     ],
   },
   {
-    text: '数据结构与算法',
+    text: "数据结构与算法",
     // link: '/dataStructureandAlgorithm/',
-    icon: 'suanfaku',
+    icon: "suanfaku",
     children: [
       {
-        text: '数据结构',
-        link: '/dataStructureandAlgorithm/dataStructure',
-        icon: 'shujujiegou-01',
+        text: "数据结构",
+        link: "/dataStructureandAlgorithm/dataStructure",
+        icon: "shujujiegou-01",
       },
       {
-        text: '算法',
-        link: '/dataStructureandAlgorithm/algorithm',
-        icon: 'xinpian',
+        text: "算法",
+        link: "/dataStructureandAlgorithm/algorithm",
+        icon: "xinpian",
       },
     ],
   },
   {
-    text: '工具',
-    link: '/tool',
-    icon: '/assets/svg/about.svg',
+    text: "工具",
+    link: "/tool",
+    icon: "/assets/svg/about.svg",
   },
   {
-    text: 'v1.0 文档',
-    icon: 'shiyongwendang',
-    link: 'https://tzwtmll.github.io/docsv1',
+    text: "项目",
+    link: "/project",
+    icon: "shiyongwendang",
   },
-])
+]);

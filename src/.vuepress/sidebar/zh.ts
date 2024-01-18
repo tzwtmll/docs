@@ -69,5 +69,12 @@ export const zhSidebar = sidebar({
       children: "structure",
       collapsible: true,
     },
+    {
+      text: "项目",
+      icon: "shiyongwendang",
+      prefix: "project/",
+      children: "structure",
+      collapsible: true,
+    },
   ],
 });
