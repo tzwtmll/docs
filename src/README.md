@@ -52,12 +52,17 @@ features:
   - title: Next.js 构建脚手架
     icon: /assets/svg/nextjs.svg
     details: 其优秀的SSR方案，让前端开发者可以更加专注于业务开发，更好的支持SEO，主要使用在H5和官网
-    link: /frontend/nextjs/index.md
+    link: /frontend/nextjs
 
   - title: Taro 构建小程序
     icon: /assets/svg/applet.svg
     details: Taro 是一个开放式跨端跨框架解决方案，支持使用 React/Vue/Nerv 等框架来开发 微信 / 京东 / 百度 / 支付宝 / 字节跳动 / QQ / 飞书 小程序 / H5 / RN 等应用。
-    link: /frontend/taro/index.md
+    link: /frontend/taro
+
+  - title: Promise 原理与使用
+    icon: /assets/svg/then.svg
+    details: Promise是一种异步编程的解决方案，其主要解决了回调地狱的问题，其本质是一个状态机，对于异步编程有着非常重要的作用
+    link: /frontend/promise
 
   # - title: Markdown 增强
   #   icon: markdown

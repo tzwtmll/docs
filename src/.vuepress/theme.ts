@@ -15,7 +15,7 @@ export default hopeTheme({
     name: "Mr.Pdd",
     url: "https://tzwtmll.github.io",
   },
-  iconAssets: "//at.alicdn.com/t/c/font_4044544_aw9rimas7o8.css",
+  iconAssets: "//at.alicdn.com/t/c/font_4044544_pkym0pupyqh.css",
   logo: "/assets/svg/logo.svg",
   repo: "https://github.com/tzwtmll/docs",
   docsDir: "demo/theme-docs/src",
