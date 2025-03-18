@@ -12,7 +12,7 @@ yarn
 
 ```sh
 npm start
-or
+or 
 yanr start
 ```
 
